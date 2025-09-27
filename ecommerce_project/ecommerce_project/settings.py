@@ -31,8 +31,8 @@ DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
 # 3. CONFIGURE ALLOWED_HOSTS for Render
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
-if DEBUG:
-    ALLOWED_HOSTS = ['*'] # Allows all hosts in development mode
+# if DEBUG:
+ALLOWED_HOSTS = ['*'] # Allows all hosts in development mode
 
 
 # Application definition
@@ -111,16 +111,21 @@ if 'DATABASE_URL' in os.environ:
 else:
     # Development database configuration (If you still want to use MySQL locally)
     DATABASES = {
+        # 'default': {
+        #     'ENGINE': 'django.db.backends.mysql',
+        #     'NAME': 'ecommerce_db', 
+        #     'USER': 'root', 
+        #     'PASSWORD': 'ramya',
+        #     'HOST': 'localhost',
+        #     'PORT': '3306',
+        #     'OPTIONS': {
+        #         'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        #     }
+        # }
+        
         'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'ecommerce_db', 
-            'USER': 'root', 
-            'PASSWORD': 'ramya',
-            'HOST': 'localhost',
-            'PORT': '3306',
-            'OPTIONS': {
-                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-            }
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
 

@@ -1,0 +1,2306 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "store",
+        "model": "product"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "store",
+        "model": "order"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "store",
+        "model": "orderitem"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "store",
+        "model": "shippingaddress"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "authtoken",
+        "model": "token"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "authtoken",
+        "model": "tokenproxy"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "h6qpzo86dqfjrjpkialxvv6imc8q1fsh",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEMjwou3fcbCDMMUjU0Ke3K-O_apAvd3nPOfYmYtrXGrfMSpywuAsTpd8NED247yPfUbrOkua3LhHJX5EG7HOfMz-vh_h3U1Ou3RtDK4zmzCWQLOKLBWMc0IIJiyKS9986jNWzBFFfYc0YLrIIOHJR4fwDrYDgF:1v1zed:uRyurdOK04gpNjwmd0ztV9M1ExfwkwyI8W52fLeu2TE",
+        "expire_date": "2025-10-10T04:01:55.443Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "tkxws862jxjgt7c6ud0z5bre31wdnzw2",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEMjwou3fcbCDMMUjU0Ke3K-O_apAvd3nPOfYmYtrXGrfMSpywuAsTpd8NED247yPfUbrOkua3LhHJX5EG7HOfMz-vh_h3U1Ou3RtDK4zmzCWQLOKLBWMc0IIJiyKS9986jNWzBFFfYc0YLrIIOHJR4fwDrYDgF:1v1qrf:-0Zl1qxcL1kORI2CdVXu-nTMUSAuYTtLsxcXrsQ0AV0",
+        "expire_date": "2025-10-09T18:38:47.853Z"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 11,
+    "fields": {
+        "name": "College bags",
+        "price": "900.00",
+        "description": "Skybags",
+        "image": "products/bag.webp",
+        "slug": "Sky-bags"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 15,
+    "fields": {
+        "name": "Bedsheets",
+        "price": "600.00",
+        "description": "colorful",
+        "image": "products/bedsheets.webp",
+        "slug": "Bed-sheets"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 16,
+    "fields": {
+        "name": "curtains",
+        "price": "500.00",
+        "description": "Turkish curtains",
+        "image": "products/curtains.webp",
+        "slug": "curtains"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 17,
+    "fields": {
+        "name": "carpets",
+        "price": "700.00",
+        "description": "stylish",
+        "image": "products/carpets.webp",
+        "slug": "carpets"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 18,
+    "fields": {
+        "name": "Sarees",
+        "price": "1000.00",
+        "description": "Ikkat",
+        "image": "products/sarees.webp",
+        "slug": "Sarees"
+    }
+},
+{
+    "model": "store.product",
+    "pk": 19,
+    "fields": {
+        "name": "Napkins",
+        "price": "50.00",
+        "description": "Napkins",
+        "image": "products/napkins.webp",
+        "slug": "Napkins"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 1,
+    "fields": {
+        "product": null,
+        "order": 2,
+        "quantity": 2,
+        "date_added": "2025-09-25T17:23:48.034Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 2,
+    "fields": {
+        "product": null,
+        "order": 1,
+        "quantity": 2,
+        "date_added": "2025-09-25T17:24:46.848Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 4,
+    "fields": {
+        "product": null,
+        "order": 4,
+        "quantity": 4,
+        "date_added": "2025-09-25T18:22:08.367Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 5,
+    "fields": {
+        "product": null,
+        "order": 4,
+        "quantity": 1,
+        "date_added": "2025-09-25T18:22:10.029Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 6,
+    "fields": {
+        "product": null,
+        "order": 4,
+        "quantity": 1,
+        "date_added": "2025-09-26T04:02:32.690Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 7,
+    "fields": {
+        "product": null,
+        "order": 5,
+        "quantity": 1,
+        "date_added": "2025-09-26T06:24:11.060Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 8,
+    "fields": {
+        "product": null,
+        "order": 5,
+        "quantity": 1,
+        "date_added": "2025-09-26T06:24:12.946Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 9,
+    "fields": {
+        "product": null,
+        "order": 5,
+        "quantity": 1,
+        "date_added": "2025-09-26T06:24:14.257Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 10,
+    "fields": {
+        "product": null,
+        "order": 5,
+        "quantity": 1,
+        "date_added": "2025-09-26T06:24:16.626Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 11,
+    "fields": {
+        "product": null,
+        "order": 5,
+        "quantity": 1,
+        "date_added": "2025-09-26T06:24:17.699Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 12,
+    "fields": {
+        "product": null,
+        "order": 6,
+        "quantity": 2,
+        "date_added": "2025-09-26T08:25:25.319Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 13,
+    "fields": {
+        "product": null,
+        "order": 6,
+        "quantity": 1,
+        "date_added": "2025-09-26T08:25:28.819Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 14,
+    "fields": {
+        "product": null,
+        "order": 6,
+        "quantity": 1,
+        "date_added": "2025-09-26T08:25:32.220Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 15,
+    "fields": {
+        "product": null,
+        "order": 7,
+        "quantity": 1,
+        "date_added": "2025-09-26T08:30:22.053Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 16,
+    "fields": {
+        "product": null,
+        "order": 7,
+        "quantity": 1,
+        "date_added": "2025-09-26T08:30:24.026Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 17,
+    "fields": {
+        "product": null,
+        "order": 7,
+        "quantity": 1,
+        "date_added": "2025-09-26T13:01:57.863Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 18,
+    "fields": {
+        "product": null,
+        "order": 7,
+        "quantity": 1,
+        "date_added": "2025-09-26T13:01:59.189Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 19,
+    "fields": {
+        "product": null,
+        "order": 8,
+        "quantity": 1,
+        "date_added": "2025-09-26T13:04:21.314Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 20,
+    "fields": {
+        "product": null,
+        "order": 8,
+        "quantity": 4,
+        "date_added": "2025-09-26T13:41:48.195Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 21,
+    "fields": {
+        "product": null,
+        "order": 8,
+        "quantity": 4,
+        "date_added": "2025-09-26T13:41:49.478Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 22,
+    "fields": {
+        "product": null,
+        "order": 8,
+        "quantity": 2,
+        "date_added": "2025-09-26T13:41:51.293Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 23,
+    "fields": {
+        "product": null,
+        "order": 8,
+        "quantity": 3,
+        "date_added": "2025-09-26T13:41:54.282Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 24,
+    "fields": {
+        "product": null,
+        "order": 8,
+        "quantity": 2,
+        "date_added": "2025-09-26T13:41:56.840Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 25,
+    "fields": {
+        "product": 11,
+        "order": 8,
+        "quantity": 3,
+        "date_added": "2025-09-26T13:41:58.586Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 30,
+    "fields": {
+        "product": null,
+        "order": 9,
+        "quantity": 1,
+        "date_added": "2025-09-26T13:56:40.813Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 31,
+    "fields": {
+        "product": null,
+        "order": 9,
+        "quantity": 2,
+        "date_added": "2025-09-26T13:56:43.706Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 32,
+    "fields": {
+        "product": null,
+        "order": 9,
+        "quantity": 1,
+        "date_added": "2025-09-26T13:57:39.774Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 33,
+    "fields": {
+        "product": null,
+        "order": 9,
+        "quantity": 1,
+        "date_added": "2025-09-26T13:57:41.380Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 34,
+    "fields": {
+        "product": null,
+        "order": 10,
+        "quantity": 3,
+        "date_added": "2025-09-26T14:03:26.305Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 35,
+    "fields": {
+        "product": null,
+        "order": 10,
+        "quantity": 2,
+        "date_added": "2025-09-26T14:03:27.581Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 36,
+    "fields": {
+        "product": null,
+        "order": 10,
+        "quantity": 1,
+        "date_added": "2025-09-26T14:03:28.568Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 37,
+    "fields": {
+        "product": null,
+        "order": 10,
+        "quantity": 1,
+        "date_added": "2025-09-26T14:03:31.301Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 38,
+    "fields": {
+        "product": null,
+        "order": 11,
+        "quantity": 1,
+        "date_added": "2025-09-26T14:07:27.459Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 39,
+    "fields": {
+        "product": 11,
+        "order": 11,
+        "quantity": 1,
+        "date_added": "2025-09-26T15:33:33.797Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 40,
+    "fields": {
+        "product": 15,
+        "order": 11,
+        "quantity": 1,
+        "date_added": "2025-09-26T15:33:35.223Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 41,
+    "fields": {
+        "product": 16,
+        "order": 11,
+        "quantity": 1,
+        "date_added": "2025-09-26T15:33:36.417Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 42,
+    "fields": {
+        "product": 17,
+        "order": 11,
+        "quantity": 2,
+        "date_added": "2025-09-26T15:33:38.400Z"
+    }
+},
+{
+    "model": "store.orderitem",
+    "pk": 43,
+    "fields": {
+        "product": 18,
+        "order": 11,
+        "quantity": 2,
+        "date_added": "2025-09-26T15:33:39.667Z"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add product",
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "codename": "add_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change product",
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "codename": "change_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete product",
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "codename": "delete_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view product",
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "codename": "view_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add order",
+        "content_type": [
+            "store",
+            "order"
+        ],
+        "codename": "add_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change order",
+        "content_type": [
+            "store",
+            "order"
+        ],
+        "codename": "change_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete order",
+        "content_type": [
+            "store",
+            "order"
+        ],
+        "codename": "delete_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view order",
+        "content_type": [
+            "store",
+            "order"
+        ],
+        "codename": "view_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add order item",
+        "content_type": [
+            "store",
+            "orderitem"
+        ],
+        "codename": "add_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change order item",
+        "content_type": [
+            "store",
+            "orderitem"
+        ],
+        "codename": "change_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete order item",
+        "content_type": [
+            "store",
+            "orderitem"
+        ],
+        "codename": "delete_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view order item",
+        "content_type": [
+            "store",
+            "orderitem"
+        ],
+        "codename": "view_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add shipping address",
+        "content_type": [
+            "store",
+            "shippingaddress"
+        ],
+        "codename": "add_shippingaddress"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change shipping address",
+        "content_type": [
+            "store",
+            "shippingaddress"
+        ],
+        "codename": "change_shippingaddress"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete shipping address",
+        "content_type": [
+            "store",
+            "shippingaddress"
+        ],
+        "codename": "delete_shippingaddress"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view shipping address",
+        "content_type": [
+            "store",
+            "shippingaddress"
+        ],
+        "codename": "view_shippingaddress"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add Token",
+        "content_type": [
+            "authtoken",
+            "token"
+        ],
+        "codename": "add_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change Token",
+        "content_type": [
+            "authtoken",
+            "token"
+        ],
+        "codename": "change_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": [
+            "authtoken",
+            "token"
+        ],
+        "codename": "delete_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view Token",
+        "content_type": [
+            "authtoken",
+            "token"
+        ],
+        "codename": "view_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add Token",
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "codename": "add_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change Token",
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "codename": "change_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "codename": "delete_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view Token",
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "codename": "view_tokenproxy"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$7OtIvTfaDytwUkakkftSyT$/5BK6bDKNRpVOgDBM5cR2P0YUENYBGXkAv0nJUW0mJU=",
+        "last_login": "2025-09-26T15:33:29.034Z",
+        "is_superuser": true,
+        "username": "ecommerce_project",
+        "first_name": "",
+        "last_name": "",
+        "email": "ecommerce_project@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-09-25T17:19:40.970Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "!0FjFRV62x8YVr998scAAo1kWkmLUhEkqXq9gitzR",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "user",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-09-25T17:23:36.583Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$S4j0y2j569ALOmE1xDa5J2$wVH9+bGMrLPL+SZ6x164vk11lP7/Tbo0M8wN2gGOV2k=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "demo",
+        "first_name": "Sugguna",
+        "last_name": "Sri",
+        "email": "demo.010305@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-09-25T17:57:04Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "store.order",
+    "pk": 1,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "date_ordered": "2025-09-25T17:20:17.986Z",
+        "complete": true
+    }
+},
+{
+    "model": "store.order",
+    "pk": 2,
+    "fields": {
+        "customer": [
+            "user"
+        ],
+        "date_ordered": "2025-09-25T17:23:41.904Z",
+        "complete": true
+    }
+},
+{
+    "model": "store.order",
+    "pk": 3,
+    "fields": {
+        "customer": [
+            "demo"
+        ],
+        "date_ordered": "2025-09-25T17:25:12.393Z",
+        "complete": true
+    }
+},
+{
+    "model": "store.order",
+    "pk": 4,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "date_ordered": "2025-09-25T18:21:42.933Z",
+        "complete": true
+    }
+},
+{
+    "model": "store.order",
+    "pk": 5,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "date_ordered": "2025-09-26T04:03:02.121Z",
+        "complete": true
+    }
+},
+{
+    "model": "store.order",
+    "pk": 6,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "date_ordered": "2025-09-26T06:31:09.801Z",
+        "complete": true
+    }
+},
+{
+    "model": "store.order",
+    "pk": 7,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "date_ordered": "2025-09-26T08:27:28.854Z",
+        "complete": true
+    }
+},
+{
+    "model": "store.order",
+    "pk": 8,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "date_ordered": "2025-09-26T13:02:53.201Z",
+        "complete": true
+    }
+},
+{
+    "model": "store.order",
+    "pk": 9,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "date_ordered": "2025-09-26T13:51:07.012Z",
+        "complete": true
+    }
+},
+{
+    "model": "store.order",
+    "pk": 10,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "date_ordered": "2025-09-26T13:58:18.812Z",
+        "complete": true
+    }
+},
+{
+    "model": "store.order",
+    "pk": 11,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "date_ordered": "2025-09-26T14:06:36.261Z",
+        "complete": true
+    }
+},
+{
+    "model": "store.order",
+    "pk": 12,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "date_ordered": "2025-09-26T15:34:17.526Z",
+        "complete": false
+    }
+},
+{
+    "model": "store.shippingaddress",
+    "pk": 1,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "order": 1,
+        "address": "65-11-1054/11, Jani Nichayya Nagar 2nd Line, Old Guntur, Guntur",
+        "city": "Guntur",
+        "state": "Andhra Pradesh",
+        "zipcode": "522001",
+        "date_added": "2025-09-25T17:24:34.411Z"
+    }
+},
+{
+    "model": "store.shippingaddress",
+    "pk": 2,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "order": 1,
+        "address": "65-11-1054/11,Old Guntur, Guntur",
+        "city": "Guntur",
+        "state": "Andhra Pradesh",
+        "zipcode": "522001",
+        "date_added": "2025-09-25T17:25:09.796Z"
+    }
+},
+{
+    "model": "store.shippingaddress",
+    "pk": 3,
+    "fields": {
+        "customer": [
+            "user"
+        ],
+        "order": 1,
+        "address": "Guntur",
+        "city": "Guntur",
+        "state": "Andhra Pradesh",
+        "zipcode": "522001",
+        "date_added": "2025-09-25T18:21:29.793Z"
+    }
+},
+{
+    "model": "store.shippingaddress",
+    "pk": 4,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "order": 4,
+        "address": "guntur",
+        "city": "Guntur",
+        "state": "Andhra Pradesh",
+        "zipcode": "522001",
+        "date_added": "2025-09-26T04:03:00.456Z"
+    }
+},
+{
+    "model": "store.shippingaddress",
+    "pk": 5,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "order": 5,
+        "address": "6/20 brodipet",
+        "city": "Guntur",
+        "state": "Andhra Pradesh",
+        "zipcode": "522001",
+        "date_added": "2025-09-26T06:29:54.000Z"
+    }
+},
+{
+    "model": "store.shippingaddress",
+    "pk": 6,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "order": 6,
+        "address": "65-11-1054/11, Jani Nichayya Nagar 2nd Line, Old Guntur, Guntur",
+        "city": "Guntur",
+        "state": "Andhra Pradesh",
+        "zipcode": "522001",
+        "date_added": "2025-09-26T08:27:26.774Z"
+    }
+},
+{
+    "model": "store.shippingaddress",
+    "pk": 7,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "order": 7,
+        "address": "old Guntur,Guntur",
+        "city": "Guntur",
+        "state": "Andhra Pradesh",
+        "zipcode": "522001",
+        "date_added": "2025-09-26T13:02:51.515Z"
+    }
+},
+{
+    "model": "store.shippingaddress",
+    "pk": 8,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "order": 8,
+        "address": "Brodipet",
+        "city": "Guntur",
+        "state": "Andhra Pradesh",
+        "zipcode": "522001",
+        "date_added": "2025-09-26T13:51:04.487Z"
+    }
+},
+{
+    "model": "store.shippingaddress",
+    "pk": 9,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "order": 9,
+        "address": "Lakshmipuram",
+        "city": "Guntur",
+        "state": "Andhra Pradesh",
+        "zipcode": "522001",
+        "date_added": "2025-09-26T13:58:15.267Z"
+    }
+},
+{
+    "model": "store.shippingaddress",
+    "pk": 10,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "order": 10,
+        "address": "Lakshmipuram-2nd line",
+        "city": "Guntur",
+        "state": "Andhra Pradesh",
+        "zipcode": "522001",
+        "date_added": "2025-09-26T14:06:32.269Z"
+    }
+},
+{
+    "model": "store.shippingaddress",
+    "pk": 11,
+    "fields": {
+        "customer": [
+            "ecommerce_project"
+        ],
+        "order": 11,
+        "address": "Tenali",
+        "city": "Tenali",
+        "state": "Andhra Pradesh",
+        "zipcode": "522001",
+        "date_added": "2025-09-26T15:34:13.960Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2025-09-25T17:23:02.776Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "scale",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2025-09-25T17:23:36.592Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "user",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2025-09-25T17:23:41.906Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "order"
+        ],
+        "object_id": "2",
+        "object_repr": "2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2025-09-25T17:23:48.036Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "orderitem"
+        ],
+        "object_id": "1",
+        "object_repr": "OrderItem object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2025-09-25T17:24:34.414Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "shippingaddress"
+        ],
+        "object_id": "1",
+        "object_repr": "65-11-1054/11, Jani Nichayya Nagar 2nd Line, Old Guntur, Guntur",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2025-09-25T17:57:06.749Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "demo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2025-09-25T17:57:57.564Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "demo",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2025-09-25T18:16:41.994Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "scale",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2025-09-25T18:17:54.623Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "pencil",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2025-09-25T18:18:05.708Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "scale",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2025-09-25T18:19:23.398Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "3",
+        "object_repr": "pencil",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2025-09-25T18:19:43.258Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "order"
+        ],
+        "object_id": "3",
+        "object_repr": "3",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Customer\", \"Complete\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2025-09-25T18:20:52.096Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "dark_pencil",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2025-09-25T18:21:29.796Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "shippingaddress"
+        ],
+        "object_id": "3",
+        "object_repr": "Guntur",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2025-09-25T18:24:07.228Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "5",
+        "object_repr": "bottle",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2025-09-25T18:39:03.107Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "dark_pencil",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2025-09-25T18:39:14.667Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "3",
+        "object_repr": "pencil",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2025-09-26T06:26:12.730Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "6",
+        "object_repr": "laptop",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2025-09-26T06:26:42.170Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "6",
+        "object_repr": "laptop",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2025-09-26T13:04:06.199Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "7",
+        "object_repr": "milk",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2025-09-26T13:19:17.440Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "3",
+        "object_repr": "pencil",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2025-09-26T13:19:26.464Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "7",
+        "object_repr": "milk",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2025-09-26T13:19:49.287Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "dark_pencil",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2025-09-26T13:22:26.324Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "6",
+        "object_repr": "laptop",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2025-09-26T13:25:05.487Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "8",
+        "object_repr": "Pens",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2025-09-26T13:26:41.700Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "9",
+        "object_repr": "Engineered plank",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2025-09-26T13:28:00.156Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "10",
+        "object_repr": "Classic Notebook",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2025-09-26T13:29:03.217Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "11",
+        "object_repr": "College bags",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2025-09-26T13:29:36.443Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "8",
+        "object_repr": "Pens",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2025-09-26T13:29:58.000Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "pencil",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2025-09-26T13:52:00.365Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "12",
+        "object_repr": "Pencil_dark",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2025-09-26T13:59:08.081Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "13",
+        "object_repr": "pencil_extradark",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2025-09-26T14:04:38.510Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "12",
+        "object_repr": "Pencil_dark",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2025-09-26T14:04:45.171Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "13",
+        "object_repr": "pencil_extradark",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2025-09-26T14:07:16.587Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "14",
+        "object_repr": "pencil_dark",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2025-09-26T15:26:18.733Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "15",
+        "object_repr": "Bedsheets",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2025-09-26T15:26:52.227Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "16",
+        "object_repr": "curtains",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2025-09-26T15:27:26.331Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "17",
+        "object_repr": "carpets",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2025-09-26T15:28:05.632Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "18",
+        "object_repr": "Sarees",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2025-09-26T15:28:28.307Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "17",
+        "object_repr": "carpets",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2025-09-26T15:28:53.515Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "scale",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2025-09-26T15:29:00.763Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "14",
+        "object_repr": "pencil_dark",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2025-09-26T15:29:05.422Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "6",
+        "object_repr": "laptop",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2025-09-26T15:29:11.674Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "9",
+        "object_repr": "Engineered plank",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2025-09-26T15:29:17.049Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "8",
+        "object_repr": "Pens",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2025-09-26T15:29:23.992Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "10",
+        "object_repr": "Classic Notebook",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2025-09-26T15:29:29.271Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "6",
+        "object_repr": "laptop",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2025-09-26T15:29:37.347Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "5",
+        "object_repr": "bottle",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2025-09-26T15:35:09.441Z",
+        "user": [
+            "ecommerce_project"
+        ],
+        "content_type": [
+            "store",
+            "product"
+        ],
+        "object_id": "19",
+        "object_repr": "Napkins",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
