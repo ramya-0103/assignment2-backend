@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import os # Import the os module
+import dj_database_url # Import dj_database_url for dynamic database settings
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,12 +22,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-k83q*kx%yv9g1$9bmz8o$_svf!ofmtc-igrwc%963v3evz(5=7'
+# 1. READ SECRET_KEY FROM ENVIRONMENT VARIABLE FOR PRODUCTION
+SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-k83q*kx%yv9g1$9bmz8o$_svf!ofmtc-igrwc%963v3evz(5=7')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# 2. SET DEBUG based on environment
+DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = []
+# 3. CONFIGURE ALLOWED_HOSTS for Render
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
+if DEBUG:
+    ALLOWED_HOSTS = ['*'] # Allows all hosts in development mode
 
 
 # Application definition
@@ -40,6 +47,8 @@ INSTALLED_APPS = [
     'store',
     'rest_framework',
     'rest_framework.authtoken', 
+    # Add whitenoise
+    'whitenoise.runserver_nostatic', 
 ]
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
@@ -53,7 +62,9 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media' 
 
 MIDDLEWARE = [
+    # 4. ADD WhiteNoiseMiddleware IMMEDIATELY AFTER SecurityMiddleware
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -83,20 +94,35 @@ WSGI_APPLICATION = 'ecommerce_project.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ecommerce_db',          # <--- CHANGE THIS: Your MySQL Database Name
-        'USER': 'root',                  # <--- CHANGE THIS: Your MySQL Username
-        'PASSWORD': 'ramya',          # <--- CHANGE THIS: Your MySQL Password
-        'HOST': 'localhost',              # Or an IP Address that your DB is hosted on
-        'PORT': '3306',                  
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+# 5. DYNAMIC DATABASE CONFIGURATION USING DATABASE_URL
+# This supports PostgreSQL on Render (via the DATABASE_URL environment variable) 
+# and defaults to the provided local configuration if DATABASE_URL is not set.
+
+if 'DATABASE_URL' in os.environ:
+    # Production database configuration (PostgreSQL)
+    DATABASES = {
+        'default': dj_database_url.config(
+            default=os.environ.get('DATABASE_URL'),
+            conn_max_age=600,
+            conn_health_check=True,
+            ssl_require=not DEBUG # Enforce SSL unless in local development
+        )
+    }
+else:
+    # Development database configuration (If you still want to use MySQL locally)
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'ecommerce_db', 
+            'USER': 'root', 
+            'PASSWORD': 'ramya',
+            'HOST': 'localhost',
+            'PORT': '3306',
+            'OPTIONS': {
+                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+            }
         }
     }
-}
 
 
 # Password validation
@@ -134,6 +160,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+# 6. STATIC FILE CONFIGURATION for WhiteNoise
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
