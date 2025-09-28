@@ -7,29 +7,42 @@ from pathlib import Path
 import os
 import dj_database_url
 
+# -------------------------
 # Build paths inside the project
+# -------------------------
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# -------------------------
 # SECURITY
+# -------------------------
 SECRET_KEY = os.environ.get(
     'SECRET_KEY',
     'django-insecure-k83q*kx%yv9g1$9bmz8o$_svf!ofmtc-igrwc%963v3evz(5=7'
 )
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-# ✅ ALLOWED_HOSTS
+# -------------------------
+# ALLOWED HOSTS
+# -------------------------
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
 if not ALLOWED_HOSTS or ALLOWED_HOSTS == ['']:
     ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'ecommerce-backend.onrender.com']
 
-# ✅ CSRF trusted origins
+# -------------------------
+# CSRF TRUSTED ORIGINS
+# -------------------------
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
     'https://ecommerce-backend.onrender.com',
 ]
 
+# Optional: for local testing
+CSRF_COOKIE_SECURE = False
+
+# -------------------------
 # Application definition
+# -------------------------
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,7 +54,7 @@ INSTALLED_APPS = [
     # Your apps
     'store',
 
-    # Third-party
+    # Third-party apps
     'rest_framework',
     'rest_framework.authtoken',
     'whitenoise.runserver_nostatic',
@@ -72,7 +85,7 @@ ROOT_URLCONF = 'ecommerce_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "templates"],  # Add global templates folder
+        'DIRS': [BASE_DIR / "templates"],  # global templates folder
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -86,7 +99,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ecommerce_project.wsgi.application'
 
+# -------------------------
 # Database
+# -------------------------
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.config(
@@ -104,7 +119,9 @@ else:
         }
     }
 
+# -------------------------
 # Password validation
+# -------------------------
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
     {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
@@ -112,25 +129,35 @@ AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
 
+# -------------------------
 # Internationalization
+# -------------------------
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
+# -------------------------
 # Static files
+# -------------------------
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+# -------------------------
 # Media files
+# -------------------------
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-# Default primary key field type
+# -------------------------
+# Default primary key
+# -------------------------
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# -------------------------
 # Auth redirects
+# -------------------------
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
