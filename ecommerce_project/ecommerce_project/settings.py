@@ -11,16 +11,13 @@ import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # SECURITY
 SECRET_KEY = os.environ.get(
     'SECRET_KEY',
     'django-insecure-k83q*kx%yv9g1$9bmz8o$_svf!ofmtc-igrwc%963v3evz(5=7'
 )
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
-# ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',') or ['*']
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '*').split(',')
 
 # Application definition
 INSTALLED_APPS = [
@@ -30,7 +27,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Your apps
     'store',
+
+    # Third-party
     'rest_framework',
     'rest_framework.authtoken',
     'whitenoise.runserver_nostatic',
@@ -45,12 +46,12 @@ REST_FRAMEWORK = {
     ]
 }
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+
+    # ✅ Whitenoise for static files
     'whitenoise.middleware.WhiteNoiseMiddleware',
+
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -64,7 +65,7 @@ ROOT_URLCONF = 'ecommerce_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [],   # If you have global templates, add BASE_DIR / "templates"
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,41 +79,25 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ecommerce_project.wsgi.application'
 
-
-# # Database
-# if 'DATABASE_URL' in os.environ:
-#     # Production (Render → PostgreSQL)
-#     DATABASES = {
-#         'default': dj_database_url.config(
-#             default=os.environ.get('DATABASE_URL'),
-#             conn_max_age=600,
-#             conn_health_checks=True,   # ✅ fixed
-#             ssl_require=not DEBUG
-#         )
-#     }
-# else:
-    # Local development (SQLite by default)
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+# Database
+if 'DATABASE_URL' in os.environ:
+    # ✅ Production (PostgreSQL on Render)
+    DATABASES = {
+        'default': dj_database_url.config(
+            default=os.environ['DATABASE_URL'],
+            conn_max_age=600,
+            conn_health_checks=True,
+            ssl_require=not DEBUG
+        )
     }
-}
-    # Uncomment this if you prefer MySQL locally
-    # DATABASES = {
-    #     'default': {
-    #         'ENGINE': 'django.db.backends.mysql',
-    #         'NAME': 'ecommerce_db',
-    #         'USER': 'root',
-    #         'PASSWORD': 'ramya',
-    #         'HOST': 'localhost',
-    #         'PORT': '3306',
-    #         'OPTIONS': {
-    #             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-    #         }
-    #     }
-    # }
-
+else:
+    # ✅ Local development (SQLite)
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
@@ -122,24 +107,25 @@ AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
 
-
 # Internationalization
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-STATIC_URL = 'static/'
+# ✅ Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+# ✅ Media files (user-uploaded content like product images)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-# Custom auth settings
+# ✅ Auth redirects
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
